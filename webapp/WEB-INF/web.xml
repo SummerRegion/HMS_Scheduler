@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <description>Verano Hotel Management System</description>
+    <display-name>HMS-scheduler</display-name>
+    <context-param>
+        <description>external folder where messages.properties i8n is stored</description>
+        <param-name>message-ext-path</param-name>
+        <param-value></param-value> <!-- default to empty. use bundled in war file -->
+    </context-param>
+    <context-param>
+        <description></description>
+        <param-name>secret</param-name>
+        <param-value>to-be-change-later-in-production-very-important</param-value>
+    </context-param>
+    <!--<filter-mapping>
+	    <filter-name>AuthorisationFilter</filter-name>
+	    <url-pattern>/webapi/*</url-pattern>
+    </filter-mapping>-->
+    <!--<servlet>
+        <servlet-name>DispatchHelper</servlet-name>
+        <servlet-class>com.summerregion.webapps.hms.helper.DispatchHelper</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DispatchHelper</servlet-name>
+        <url-pattern>/DispatchHelper</url-pattern>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+    <resource-ref>
+        <res-ref-name>jdbc/CRMDS</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+        <res-auth>Container</res-auth>
+        <res-sharing-scope>Shareable</res-sharing-scope>
+        <lookup-name>java:/jdbc/CRMDS</lookup-name>
+    </resource-ref>
+</web-app>
