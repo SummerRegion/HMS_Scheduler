@@ -1,0 +1,49 @@
+                    </div> <!-- container -->
+
+                </div> <!-- content -->
+
+                <footer class="footer text-right">
+                    <div class="pull-left">
+                        2019 &copy; Summer Region Sdn. Bhd.
+                    </div>
+                    <div class="pull-right">
+                    Version: 2.0.591
+                    </div>
+                </footer>
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- End Right content here -->
+            <!-- ============================================================== -->
+
+        </div>
+        <!-- END wrapper -->
+        
+        <script>
+            var resizefunc = [];
+        </script>
+         <!--App js--> 
+        <script src="${pageContext.request.contextPath}/js/jquery.core.js"></script>
+        <script src="${pageContext.request.contextPath}/js/jquery.app.js"></script>
+        
+        <!--Data Table-->
+        <script src="${pageContext.request.contextPath}/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/datatables/dataTables.rowGroup.min.js"></script>
+        
+         <!--Adv Form js-->  
+        <script src="${pageContext.request.contextPath}/plugins/select2/js/select2.min.js"></script>
+        
+        <!--full calendar-->
+        <script src="${pageContext.request.contextPath}/plugins/moment/moment.js"></script>
+        <script src="${pageContext.request.contextPath}/plugins/moment/moment-recur.js"></script>
+        
+    </body>
+</html>
+

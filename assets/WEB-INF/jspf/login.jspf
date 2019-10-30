@@ -1,0 +1,59 @@
+<%@ page pageEncoding="UTF-8" %>
+<div class="container-alt">
+
+    <div id="divLogin">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="wrapper-page">
+
+                    <div class="m-t-40 account-pages">
+                        <div class="text-center account-logo-box" style="background:rgba(173, 179, 188, 0.8);">
+                            <h2 class="text-center">
+                            <span><img src="${pageContext.request.contextPath}/images/verano.png"></span>
+                            </h2>
+                        </div>
+                        <div class="account-content" style="background:rgba(255,255,255,0.8);">
+                            <div class="form-horizontal">
+                                <div class="text-center m-b-20">
+                                    <h2 class="m-b-0 text-right" style="color: #484f5b;">System Login</h2>
+                                </div>
+
+                                <div id="divUserID" class="form-group">
+                                    <div class="col-xs-12" style="color: #484f5b;">
+                                        <input id="txtUserID" class="form-control" type="text" maxlength="20" placeholder="User Id">                                                    
+                                    </div>
+                                </div>
+
+                                <div id="divPassword" class="form-group">
+                                    <div class="col-xs-12" style="color: #484f5b;">
+                                        <input id="txtPassword" class="form-control" type="password" placeholder="Password">
+                                    </div>
+                                </div>
+
+                                <div class="form-group text-center m-t-30">
+                                    <div class="col-sm-12" style="color: #484f5b;">
+                                        2019 &copy; Summer Region Sdn. Bhd.                                           
+                                    </div>
+                                </div>
+
+                                <div class="form-group account-btn text-center m-t-10">
+                                    <div class="col-xs-12">
+                                        <button id="btnLogin" class="btn btn-rounded w-md btn-bordered btn-custom waves-effect waves-light" type="submit" style="background-color:darkgrey;">Login</button>
+                                    </div>                                                
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end card-box-->
+
+                </div>
+                <!-- end wrapper -->
+
+            </div>
+        </div>
+    </div>
+
+</div>

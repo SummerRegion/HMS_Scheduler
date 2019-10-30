@@ -1,0 +1,59 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="row">
+    <div class="col-xs-12">
+        <div class="page-title-box">
+            <h4 class="page-title">Room Gantt Chart</h4>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 m-b-30 m-t-30"></div>
+    <div class="col-md-12 m-b-20"></div>
+</div>
+<!-- end row -->
+
+<div>
+    <div class="col-sm-12">
+        <div class="card-box">
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="divRoomTypeRGC" class="form-group">
+                        <select class="form-control select2" id="drlRoomTypeRGC"></select>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="divHkStatusRGC" class="form-group">
+                        <select class="form-control select2" id="drlHkStatusRGC"></select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="m-r-15 m-l-15">
+                    <div id="calendar"></div>
+                </div>
+            </div>
+            <div class="row" style="padding-top:20px;">
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:#fcf8e3;"></i>Today</label>
+                </div>
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:lightgrey;"></i>Out Of Order</label>
+                </div>
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:#f40cf4;"></i>Reserved Guest</label>
+                </div>
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:#4bd396;"></i>Due In Guest</label>
+                </div>
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:#e0a316;"></i>In House Guest</label>
+                </div>
+                <div class="col-md-2">
+                    <label><i class="mdi mdi-24px mdi-checkbox-blank" style="color:#5069d8;"></i>Due Out Guest</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
