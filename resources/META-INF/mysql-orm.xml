@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings
+    xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm orm_2_1.xsd"
+    version="2.1">
+    <entity class="com.summerregion.webapps.hms.models.bo.Bocharge" access="FIELD">
+        <attributes>
+            <id name="bochargeId">
+                <column name="BOCHARGE_ID"/>
+                <generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bochargehist" access="FIELD">
+        <attributes>
+            <id name="bochargehistId">
+                <column name="BOCHARGEHIST_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bocounter" access="FIELD">
+        <attributes>
+            <id name="bocounterId">
+                <column name="BOCOUNTER_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bocounterdetail" access="FIELD">
+        <attributes>
+            <id name="bocounterdetailId">
+                <column name="BOCOUNTERDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bofolio" access="FIELD">
+        <attributes>
+            <id name="bofolioId">
+                <column name="BOFOLIO_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bopayment" access="FIELD">
+        <attributes>
+            <id name="bopaymentId">
+                <column name="BOPAYMENT_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.bo.Bosharecounter" access="FIELD">
+        <attributes>
+            <id name="bosharecounterId">
+                <column name="BOSHARECOUNTER_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.cm.AuditLog" access="FIELD">
+        <attributes>
+            <id name="cmAuditLogId">
+                <column name="CMAUDITLOG_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.cm.AuditLogCRM" access="FIELD">
+        <attributes>
+            <id name="cmAuditLogCRMId">
+                <column name="CMAUDITLOGCRM_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.cm.AuditLogEMS" access="FIELD">
+        <attributes>
+            <id name="cmAuditLogEMSId">
+                <column name="CMAUDITLOGEMS_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.cm.AuditLogSetup" access="FIELD">
+        <attributes>
+            <id name="cmAuditLogSetupId">
+                <column name="CMAUDITLOGSETUP_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.crm.Activity" access="FIELD">
+        <attributes>
+            <id name="activityId">
+                <column name="CRMACTIVITY_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.crm.ActivityDetail" access="FIELD">
+        <attributes>
+            <id name="activitydetailId">
+                <column name="CRMACTIVITYDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.crm.Client" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="CRMCLIENT_ID"/>
+                <generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.Event" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSEVENT_ID"/>
+                <generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventOrder" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSORDER_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventOrderBreakdown" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSORDERBREAKDOWN_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventOrderDetail" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSORDERDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventRegistration" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSREGISTRATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventReservation" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSRESERVATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.ems.EventRoomCharge" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="EMSROOMCHARGE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Address" access="FIELD">
+        <attributes>
+            <id name="addressId">
+                <column name="FDADDRESS_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Anouncement" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="FDANOUNCEMENT_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.CheckInDetail" access="FIELD">
+        <attributes>
+            <id name="checkInDetailId">
+                <column name="FDCHECKINDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Folio" access="FIELD">
+        <attributes>
+            <id name="folioId">
+                <column name="FDFOLIO_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.GuestMsg" access="FIELD">
+        <attributes>
+            <id name="guestmsgId">
+                <column name="FDGUESTMSG_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Notification" access="FIELD">
+        <attributes>
+            <id name="notificationId">
+                <column name="FDNOTIFICATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Person" access="FIELD">
+        <attributes>
+            <id name="personId">
+                <column name="FDPERSON_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.RegistrationHist" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="FDREGISTRATIONHIST_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Registration" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="FDREGISTRATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.Reservation" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="FDRESERVATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.RoomCharge" access="FIELD">
+        <attributes>
+            <id name="fdroomchargeId">
+                <column name="FDROOMCHARGE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.fd.RoomChargeHist" access="FIELD">
+        <attributes>
+            <id name="fdroomchargehistId">
+                <column name="FDROOMCHARGEHIST_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gl.DailyLog" access="FIELD">
+        <attributes>
+            <id name="dailyLogId">
+                <column name="GLDAILYLOG_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gl.PostFile" access="FIELD">
+        <attributes>
+            <id name="postFileId">
+                <column name="GL_POST_FILE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gl.PostFull" access="FIELD">
+        <attributes>
+            <id name="postFullId">
+                <column name="GL_POST_FULL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.CateringMenu" access="FIELD">
+        <attributes>
+            <id name="cateringMenuId">
+                <column name="GNCATERINGMENU_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.CateringMenuPackage" access="FIELD">
+        <attributes>
+            <id name="cateringMenuPackageId">
+                <column name="GNCATERINGMENUPACKAGE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.CateringMenuPackageDetail" access="FIELD">
+        <attributes>
+            <id name="cateringMenuPackageDetailId">
+                <column name="GNCATERINGMENUPACKAGEDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.ChargeItem" access="FIELD">
+        <attributes>
+            <id name="gnchargeitemId">
+                <column name="GNCHARGEITEM_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.ChargeItemLine" access="FIELD">
+        <attributes>
+            <id name="gnchargeitemlineId">
+                <column name="GNCHARGEITEMLINE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.CodeLines" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNCODELINE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Codes" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNCODE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Country" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNCOUNTRY_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.GLAccount" access="FIELD">
+        <attributes>
+            <id name="gnGLAccountId">
+                <column name="GNGLACCOUNT_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Hotel" access="FIELD">
+        <attributes>
+            <id name="hotelId">
+                <column name="GNHOTEL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Menu" access="FIELD">
+        <attributes>
+            <id name="menuId">
+                <column name="GNMENU_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Organisation" access="FIELD">
+        <attributes>
+            <id name="organisationId">
+                <column name="GNORGANISATION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.PaymentMode" access="FIELD">
+        <attributes>
+            <id name="gnpaymentmodeId">
+                <column name="GNPAYMENTMODE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Printer" access="FIELD">
+        <attributes>
+            <id name="printerId">
+                <column name="GNPRINTER_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Rate" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNRATE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RateLine" access="FIELD">
+        <attributes>
+            <id name="gnratelineId">
+                <column name="GNRATELINE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.ReportPrinter" access="FIELD">
+        <attributes>
+            <id name="reportPrinterId">
+                <column name="GNREPORTPRINTER_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Role" access="FIELD">
+        <attributes>
+            <id name="gnroleid">
+                <column name="GNROLE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoleMenu" access="FIELD">
+        <attributes>
+            <id name="roleMenuId">
+                <column name="GNROLEMENU_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoleReport" access="FIELD">
+        <attributes>
+            <id name="roleReportId">
+                <column name="GNROLEREPORT_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Room" access="FIELD">
+        <attributes>
+            <id name="gnroomId">
+                <column name="GNROOM_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoomAllotment" access="FIELD">
+        <attributes>
+            <id name="gnroomallotmentId">
+                <column name="GNROOMALLOTMENT_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoomAllotmentDetail" access="FIELD">
+        <attributes>
+            <id name="gnroomallotmentdetailId">
+                <column name="GNROOMALLOTMENTDETAIL_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoomHist" access="FIELD">
+        <attributes>
+            <id name="gnroomhistId">
+                <column name="GNROOMHIST_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.RoomType" access="FIELD">
+        <attributes>
+            <id name="gnroomtypeId">
+                <column name="GNROOMTYPE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.State" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNSTATE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Tax" access="FIELD">
+        <attributes>
+            <id name="gntaxId">
+                <column name="GNTAX_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.TaxLine" access="FIELD">
+        <attributes>
+            <id name="gntaxlineId">
+                <column name="GNTAXLINE_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.Terminal" access="FIELD">
+        <attributes>
+            <id name="terminalId">
+                <column name="GNTERMINAL_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.User" access="FIELD">
+        <attributes>
+            <id name="id">
+                <column name="GNUSER_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.gn.UserRole" access="FIELD">
+        <attributes>
+            <id name="gnuserroleid">
+                <column name="GNUSERROLE_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.hk.HousekeepAudit" access="FIELD">
+        <attributes>
+            <id name="housekeepAuditId">
+                <column name="HKHOUSEKEEPAUDIT_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.hk.OOOAudit" access="FIELD">
+        <attributes>
+            <id name="hkOOOAuditId">
+                <column name="HKOOOAUDIT_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.je.JournalEntry" access="FIELD">
+        <attributes>
+            <id name="journalEntryId">
+                <column name="JOURNALENTRY_ID"/><generated-value strategy="IDENTITY"/>
+                
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.na.NightAuditJob" access="FIELD">
+        <attributes>
+            <id name="nightAuditJobId">
+                <column name="JOB_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.na.NightAuditStatus" access="FIELD">
+        <attributes>
+            <id name="nightAuditStatusId">
+                <column name="NIGHTAUDITSTATUS_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.na.NightAuditSummary" access="FIELD">
+        <attributes>
+            <id name="nightAuditSummaryId">
+                <column name="NIGHTAUDITSUMMARY_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.pt.PostingException" access="FIELD">
+        <attributes>
+            <id name="postingExceptionId">
+                <column name="POSTINGEXCEPTION_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.pt.PostingJob" access="FIELD">
+        <attributes>
+            <id name="jobId">
+                <column name="JOB_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.pt.PostingStatus" access="FIELD">
+        <attributes>
+            <id name="postingStatusId">
+                <column name="POSTINGSTATUS_ID"/><generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+    <entity class="com.summerregion.webapps.hms.models.rpt.Report" access="FIELD">
+        <attributes>
+            <id name="reportId">
+                <column name="GNREPORT_ID"/>
+                <generated-value strategy="IDENTITY"/>
+            </id>
+        </attributes>
+    </entity>
+</entity-mappings>
